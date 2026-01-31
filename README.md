@@ -1,4 +1,4 @@
-> Fork from [jladicos/apple-books-highlights](https://github.com/jladicos/apple-books-highlights) and upgrade by OpenAI Codex.
+> This project is forked from [jladicos/apple-books-highlights](https://github.com/jladicos/apple-books-highlights) and upgraded using OpenAI Codex.
 
 # Apple Books Highlights & Notes Export
 
