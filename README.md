@@ -2,35 +2,11 @@
 
 # Apple Books Highlights & Notes Export
 
-Export your Apple Books highlights and notes to markdown files.  Modified from [fork][] by [matttrent][], who modified from [original][] by [shrsv][].
-
-[fork]: https://github.com/matttrent/ibooks-highlights
-[matttrent]: https://github.com/matttrent
-[original]: https://github.com/shrsv/ibooks_highlights_export
-[shrsv]:    https://github.com/shrsv
-
-
 ## What it does
 
 The scripts first opens Apple Books and closes it after a number of seconds, to force a refresh of the local sqlite database that Apple Books uses to track annotations. This is useful if you're like me and read books on your iPhone or iPad. It then reads this sqlite database and proceeds to generate a markdown file corresponding to each book in the database, and populate it with the associated highlights and notes.
 
 It preserves each book's identifier (and some other data) in the YAML header of the markdown file. You can actually rename the file and the next run of the script will find and update the appropriate file.  Additionally, it creates a **My notes** section for additional free-form notes that it won't overwrite on subsequent updates.
-
-## Usage
-
-Simplest way to get your highlights, though you might want to create a `virtualenv` first:
-
-```
-$ python3 setup.py install
-$ apple-books-highlights.py sync
-$ ll books
-```
-
-I've personally used a bash alias like this, so I can call `sync-books` from terminal anywhere on my system to update the annotations:
-
-```
-alias sync-books="apple-books-highlights.py --bookdir 'absolute/path/to/folder' sync"
-```
 
 ## What you get per book
 
@@ -100,7 +76,3 @@ or
 ```
 $ apple-books-highlights.py list -n
 ```
-
-## TODO
-
-- [ ] `¯\_(ツ)_/¯`
