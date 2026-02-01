@@ -68,3 +68,5 @@ ibooks-highlights.code-workspace
 
 .venv/
 .ruff_cache/
+
+.DS_Store
